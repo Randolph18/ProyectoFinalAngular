@@ -1,49 +1,23 @@
-<div class="container">
-  <div class="row">
-    <div class="col-md-8">
-      <h2>Lista de productos</h2>
-      <div class="row">
-        <div class="col-md-3">
-          <div class="card">
-            <img src="imagen-del-producto.jpg" class="card-img-top">
-            <div class="card-body">
-              <h5 class="card-title">Nombre del producto</h5>
-              <p class="card-text">Descripción del producto</p>
-              <p class="card-text">Precio: $100</p>
-              <a href="#" class="btn btn-primary">Añadir al carrito</a>
-            </div>
-          </div>
-        </div>
-        <!-- Repite el código anterior para mostrar más productos -->
-      </div>
-    </div>
-    <div class="col-md-4">
-      <h2>Carrito de compra</h2>
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">Productos en el carrito</h5>
-          <table class="table">
-            <thead>
-              <tr>
-                <th>Nombre</th>
-                <th>Precio</th>
-                <th>Cantidad</th>
-                <th>Acción</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Nombre del producto</td>
-                <td>$100</td>
-                <td>1</td>
-                <td><a class="btn btn-danger">Eliminar</a></td>
-              </tr>
-            </tbody>
-          </table>
-          <p>Total: $100</p>
-          <a class="btn btn-success">Comprar</a>
-        </div>
-      </div>
-    </div>
+
+<div class="container-carrito" style="width: 70%; margin:auto;">
+  <h2 style="font-size: 24px; font-weight: bold; color: green; margin-bottom: 16px;">Productos en el carrito</h2>
+  <table style="border-collapse: collapse; border: 2px solid green; border-radius: 8px; width: 100%;margin: 70px 0 0 0;">
+    <thead>
+      <tr style="background-color: green; color: white;">
+        <th style="padding: 8px;">Nombre</th>
+        <th style="padding: 8px;">Precio</th>
+        <th style="padding: 8px;">Cantidad</th>
+        <th style="padding: 8px;">Acción</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Aquí añadiríamos las filas de productos -->
+      <th style="padding: 8px;"></th>
+    </tbody>
+  </table>
+  <div style="display: flex; justify-content: flex-end; margin-top: 16px;">
+    <span style="font-weight: bold; font-size: 20px; color: green; margin-right: 16px;">Total:</span>
+    <span style="font-weight: bold; font-size: 20px; color: green;">$0</span>
   </div>
+  <button style="display: block; margin: auto; margin-top: 32px; border: 2px solid red; border-radius: 8px; padding: 8px 16px; font-size: 20px; font-weight: bold; color: white; background-color: green;">Comprar</button>
 </div>

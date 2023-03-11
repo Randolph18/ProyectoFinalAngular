@@ -1,46 +1,8 @@
-<!--<div class="container">
-    <div id="lista" class="row">
-        <div class="col-3">
-            <h3>Categorías</h3>
-            <ul class="list-group">
-                <li class="list-group-item"><a href="#">Frutas</a></li>
-                <li class="list-group-item"><a href="#">Verduras</a></li>
-                <li class="list-group-item"><a href="#">Orgánicos</a></li>
-            </ul>
-            <h3>Filtros</h3>
-            <form>
-                <div class="form-group">
-                    <label for="precio">Precio</label>
-                    <select class="form-control" id="precio">
-                        <option>Menor a $10</option>
-                        <option>Entre $10 y $20</option>
-                        <option>Mayor a $20</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="marca">Marca</label>
-                    <select class="form-control" id="marca">
-                        <option>Marca A</option>
-                        <option>Marca B</option>
-                        <option>Marca C</option>
-                    </select>
-                </div>
-                <button type="submit" class="btn btn-primary">Aplicar filtros</button>
-            </form>
-        </div>
+<div class="container-card">
+    <div class="card-group">
+        <app-card [dataInput]="data" [indexInput]="i" *ngFor="let data of items;let i = index"></app-card>
     </div>
-</div>-->
-<br>
-<br>
-<br>
-<br>
-<div class = "card-group">
-    <app-card 
-            [dataInput]="data" 
-            [indexInput]="i" 
-            *ngFor="let data of items;let i = index"
-    ></app-card> 
-</div>
-<div class="navbar fixed-bottom bg-light">
-    <a href="#">Carrito de compras</a>
+    <div class="navbar fixed-bottom bg-light">
+        <a href="#">Carrito de compras</a>
+    </div>
 </div>

@@ -1,11 +1,22 @@
-<div class="card" style="width: 18rem;">
+<div class="card"
+    style="width: 18rem;border-radius: 10px; margin: 10px; box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.15); padding: 10px; top: 70px;background-color: rgba(255, 255, 255, 0.8);">
 
-    <img [src]="dataInput.image" class="card-img-top">
+    <img [src]="dataInput.image" class="card-img-top" style="width: 100%; border-radius: 10px 10px 0 0;">
     <div class="card-body">
-        <h5 class="card-title">{{dataInput.name}}</h5>
-        <p class="card-text">{{dataInput.price}}</p>
+        <h5 class="card-title" style="margin: 10px 0;">{{dataInput.name}}</h5>
+        <h3 class="card-text" style="margin: 10px 0;">{{dataInput.price}}</h3>
         <hr>
-        <a class="btn btn-primary" (click)="buyGame()">Comprar</a>
-    </div>
+        <div style="display: flex; margin-top: 10px;">
+            <button
+                style="border-radius: 5px; border: none; padding: 5px 10px; margin-right: 10px; background-color: #f44336; color: white;"
+                (click)="buyGame()">Comprar</button>
+            <div
+                style="border: 1px solid black; border-radius: 5px; padding: 5px 10px; display: flex; align-items: center;">
+                <span style="margin-right: 5px;">Cantidad:</span>
+                <input type="number" min="1" value="1"
+                    style="border: none; outline: none; width: 40px; font-size: 16px; padding: 2px;">
 
-</div>
+            </div>
+        </div>
+    </div>
+    <!---->

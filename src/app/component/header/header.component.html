@@ -19,9 +19,9 @@
           
           </button>
         <ng-container *ngIf="auth.isAuthenticated$ | async; else loggedOut">
-          <button class="btn btn-outline-danger" (click)="auth.logout({returnTo:document.location.origin})">
+         <!-- <button class="btn btn-outline-danger" (click)="auth.logout({returnTo:document.location.origin})">
             Log out
-          </button>
+          </button>-->
         </ng-container>
         <ng-template #loggedOut>
           <button type="button" class="btn btn-outline-light me-2"(click)="auth.loginWithRedirect()"[routerLink]="['login']">Login</button>
